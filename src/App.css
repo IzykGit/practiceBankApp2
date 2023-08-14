@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+*::-webkit-scrollbar {
+    display: hidden;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Noto Serif', serif;
+}
+
+.navbarContainer {
+    width: 700px;
+}
+
+.navbar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar > li {
+    font-size: 18px;
+    color: rgb(95, 101, 106);
+    cursor: pointer;
+}
+
+.navbar > li:hover {
+    text-decoration: underline;
+    text-decoration-color: #3A7CA5;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+.navImageContainer {
+    position: relative;
+    text-align: center;
+}
+
+.headerAndImage {
+    display: flex;
+    width: fit-content;
+    margin: 40px 0px 0px 40px;
+}
+
+.navImage {
+    width: auto;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.pageHeader {
+    font-size: 40px;
+}
+
+.extraOptions {
+    position: relative;
+    width: 400px;
+    float: right;
+    right: 20px;
+    top: 10px;
+}
+
+.extraOptionsNavbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.extraOptionsNavbar > li {
+    font-size: 18px;
+    color: rgb(95, 101, 106);
+    cursor: pointer;
+}
+
+.extraOptionsNavbar > li:hover {
+    text-decoration: underline;
+    text-decoration-color: #3A7CA5;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+
+.firstSection {
+    height: 490px;
+    background-color: #EAEAEA;
+    cursor: default;
+}
+
+.introductionContainer {
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+.introduction {
+    font-size: 50px;
+}
+
+.subIntroduction {
+    font-size: 20px;
+}
+
+.cardOfferContainer {
+    position: relative;
+    right: 250px;
+    float: right;
+    text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+.cardIcon {
+    width: 250px;
+    cursor: pointer;
+}
+
+.creditCardInfo {
+    font-size: 20px;
+    padding: 10px 10px 0 10px;
+}
