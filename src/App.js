@@ -11,16 +11,16 @@ const App = () => {
     AOS.init({duration: 1000})
     useEffect(() => {
         AOS.init();
-    }, [])
+    }, [    ])
 
 
     return (
         <div>
             <div className="extraOptions">
                 <ul className="extraOptionsNavbar">
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
+                    <li>Customer Service</li>
+                    <li>FAQs</li>
+                    <li>ATM Locator</li>
                 </ul>
             </div>
             <div className="headerAndImage">
@@ -30,20 +30,21 @@ const App = () => {
             
             <div className="navbarContainer">
                 <ul className="navbar">
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
+                    <li>Checking</li>
+                    <li>Savings</li>
+                    <li>Credit Cards</li>
+                    <li>Home</li>
+                    <li>Auto</li>
+                    <li>Login/SignUp</li>
                 </ul>
             </div>
             <div className="firstSection">
                 <div className="introductionContainer">
                     <h1 className="introduction">Get started with <span style={{color: '#4F6D7A'}}>Best Bank</span> today.</h1>
-                    <p className="subIntroduction">Sentence placeholder</p>
+                    <p className="subIntroduction"><span style={{color: "blue", cursor: "pointer"}}>Sign Up</span> today and enjoy $250 with 5% APY.</p>
                 </div>
                 <div className="cardOfferContainer">
-                    <p className="creditCardInfo"><span style={{color: "blue", cursor: "pointer"}}>Create an account today</span> and get a card with <br /> 1.5% cash back and no annual fee.</p>
+                    <p className="creditCardInfo"><span style={{color: "blue", cursor: "pointer"}}>See about getting</span> a card with <br /> 1.5% cash back and no annual fee.</p>
                     <img className="cardIcon" src={cardIcon} alt="credit card icon"/>
                 </div>
             </div>

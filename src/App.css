@@ -23,7 +23,7 @@
 }
 
 .navbar > li {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(95, 101, 106);
     cursor: pointer;
 }
@@ -43,7 +43,7 @@
 .headerAndImage {
     display: flex;
     width: fit-content;
-    margin: 40px 0px 0px 40px;
+    margin: 40px 0px 0px 50px;
 }
 
 .navImage {
@@ -71,7 +71,7 @@
 }
 
 .extraOptionsNavbar > li {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(95, 101, 106);
     cursor: pointer;
 }
@@ -94,6 +94,7 @@
     position: relative;
     top: 150px;
     left: 150px;
+    width: fit-content;
 }
 
 .introduction {
