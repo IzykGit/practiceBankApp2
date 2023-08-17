@@ -22,15 +22,17 @@
     list-style: none;
 }
 
-.navbar > li {
+
+.navLink {
     font-size: 15px;
     color: rgb(95, 101, 106);
     cursor: pointer;
+    text-decoration: none;
 }
 
-.navbar > li:hover {
+.navLink:hover {
     text-decoration: underline;
-    text-decoration-color: #3A7CA5;
+    text-decoration-color: blue;
     text-decoration-thickness: 2px;
     text-underline-position: under;
 }
@@ -78,7 +80,7 @@
 
 .extraOptionsNavbar > li:hover {
     text-decoration: underline;
-    text-decoration-color: #3A7CA5;
+    text-decoration-color: blue;
     text-decoration-thickness: 2px;
     text-underline-position: under;
 }
