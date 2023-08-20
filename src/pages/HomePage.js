@@ -1,8 +1,10 @@
 import React, {useEffect} from "react";
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import cardIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/cardIcon.png';
+import ratingVector from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/ratingVector.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css'
+import '@splidejs/splide/dist/css/splide.min.css';
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css';
 import {Link} from 'react-router-dom';
 
 const HomePage = () => {
@@ -40,7 +42,43 @@ const HomePage = () => {
                     <img className="cardIcon" src={cardIcon} alt="credit card icon"/>
                 </div>
             </div>
-            
+            <div data-aos="fade-up" className="splideContainer">
+                <Splide options={{
+                    perMove: 1,
+                    pagination: false,
+                    perPage: 1,
+                    drag: 'free'
+                }} className="reviewSlider">
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Best customer service I've had in years!</p>
+                    </SplideSlide>
+                </Splide>
+            </div>
         </div>
     )
 }

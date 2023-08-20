@@ -130,6 +130,41 @@
 
 
 
+/*Splide section */
+
+.splideContainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.reviewSlider {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 700px;
+}
+
+.ratingContainer {
+ padding: 10px;
+ text-align: center;
+}
+
+
+.ratingVector {
+    width: 200px;
+    height: auto;
+}
+
+.ratingReview {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+
 /* Login/Signup Page */
 
 .accountCard {
@@ -157,4 +192,10 @@
     margin: 0 0 20px 0;
     font-size: 15px;
 }
+
+
+
+
+
+
 
