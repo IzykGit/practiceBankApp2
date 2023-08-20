@@ -3,7 +3,7 @@ import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/
 import cardIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/cardIcon.png';
 import ratingVector from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/ratingVector.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
+import  '@splidejs/react-splide/css';
 import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css';
 import {Link} from 'react-router-dom';
 
@@ -42,12 +42,14 @@ const HomePage = () => {
                     <img className="cardIcon" src={cardIcon} alt="credit card icon"/>
                 </div>
             </div>
-            <div data-aos="fade-up" className="splideContainer">
-                <Splide options={{
-                    perMove: 1,
+            <section data-aos="fade-up" className="splideContainer">
+                <Splide tag="section" options={{
+                    rewind: true,
+                    perMove: 3,
                     pagination: false,
-                    perPage: 1,
-                    drag: 'free'
+                    perPage: 2,
+                    drag: 'free',
+                    snap: true,
                 }} className="reviewSlider">
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
@@ -55,29 +57,40 @@ const HomePage = () => {
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">defintely the best bank</p>
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">Another happy customer</p>
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">great place for personal loans</p>
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">They really help you save.</p>
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">Excellent credit services</p>
                     </SplideSlide>
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
-                            <p className="ratingReview">Best customer service I've had in years!</p>
+                            <p className="ratingReview">Good service with no crazy fees</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">Need a credit card? Go to best bank.</p>
+                    </SplideSlide>
+                    <SplideSlide className="ratingContainer">
+                            <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
+                            <p className="ratingReview">They are always happy to answer all my questions</p>
                     </SplideSlide>
                 </Splide>
+            </section>
+            <div>
+                
             </div>
         </div>
     )

@@ -136,14 +136,15 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    padding: 35px;
+    padding: 40px;
 }
 
 .reviewSlider {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    width: 700px;
+    width: 70%;
+    height: fit-content;
+    border: 1px solid rgb(221, 221, 221);
 }
 
 .ratingContainer {
@@ -153,7 +154,7 @@
 
 
 .ratingVector {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
