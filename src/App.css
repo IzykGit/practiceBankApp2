@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 *::-webkit-scrollbar {
-    display: hidden;
+    display: none;
 }
 
 * {
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
     font-family: 'Noto Serif', serif;
 }
 
@@ -136,7 +135,7 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 45px;
 }
 
 .reviewSlider {
@@ -161,6 +160,13 @@
 .ratingReview {
     font-size: 20px;
     padding-left: 10px;
+}
+
+/* Slogan and vectors section */
+
+.slogansAndVectors {
+    border: 1px solid black;
+    height: 1000px;
 }
 
 
@@ -193,6 +199,9 @@
     margin: 0 0 20px 0;
     font-size: 15px;
 }
+
+
+
 
 
 

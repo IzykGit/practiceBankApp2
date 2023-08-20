@@ -44,12 +44,12 @@ const HomePage = () => {
             </div>
             <section data-aos="fade-up" className="splideContainer">
                 <Splide tag="section" options={{
-                    rewind: true,
-                    perMove: 3,
-                    pagination: false,
-                    perPage: 2,
+                    perMove: 1,
+                    perPage: 1,
                     drag: 'free',
                     snap: true,
+                    pagination: false,
+                    type: 'loop'
                 }} className="reviewSlider">
                     <SplideSlide className="ratingContainer">
                             <img className="ratingVector" alt="5 star rating" src={ratingVector}/>
@@ -89,8 +89,8 @@ const HomePage = () => {
                     </SplideSlide>
                 </Splide>
             </section>
-            <div>
-                
+            <div className="slogansAndVectors">
+                <p>placeholder</p>
             </div>
         </div>
     )
