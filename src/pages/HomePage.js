@@ -11,7 +11,7 @@ const HomePage = () => {
         <div>
             <div data-aos="fade-in" className="extraOptions">
                 <ul className="extraOptionsNavbar">
-                    <li>Customer Service</li>
+                    <li>Customer Support</li>
                     <li>FAQs</li>
                     <li>ATM Locator</li>
                 </ul>
@@ -26,7 +26,6 @@ const HomePage = () => {
                     <li>Checking</li>
                     <li>Savings</li>
                     <li>Credit Cards</li>
-                    <li>Home</li>
                     <li>Auto</li>
                     <Link to="/LogIn" className="navLink">LogIn/SignUp</Link>
                 </ul>
@@ -34,7 +33,7 @@ const HomePage = () => {
             <div className="firstSection">
                 <div data-aos="fade-right" className="introductionContainer">
                     <h1 className="introduction">Get started with <span style={{color: '#4F6D7A'}}>Best Bank</span> today.</h1>
-                    <p className="subIntroduction"><span style={{color: "blue", cursor: "pointer"}}>Sign Up</span> today and enjoy $250 with 5% APY.</p>
+                    <p className="subIntroduction"><Link to="/SignUp" style={{color: "blue", cursor: "pointer", textDecoration: "none"}}>Sign Up</Link> today and enjoy $250 with 5% APY.</p>
                 </div>
                 <div data-aos="fade-left" className="cardOfferContainer">
                     <p className="creditCardInfo"><span style={{color: "blue", cursor: "pointer"}}>See about getting</span> a card with <br /> 1.5% cash back and no annual fee.</p>

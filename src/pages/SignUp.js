@@ -5,10 +5,10 @@ import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css'
 import {Link} from 'react-router-dom';
 
 
-const Login = () => {
+const SignUp = () => {
     return (
         <div>
-            <div className="extraOptions">
+            <div data-aos="fade-in" className="extraOptions">
                 <ul className="extraOptionsNavbar">
                     <li>Customer Support</li>
                     <li>FAQs</li>
@@ -20,7 +20,7 @@ const Login = () => {
                 <img className="navImage" alt="bankIcon" src={bankIcon}/>
             </div>
             
-            <div className="navbarContainer">
+            <div data-aos="fade-in" className="navbarContainer">
                 <ul className="navbar">
                     <Link to="/" className="navLink">Home</Link>
                     <li>Checking</li>
@@ -31,18 +31,19 @@ const Login = () => {
             </div>
             <div className="firstSection" style={{display: 'flex', justifyContent: 'center'}}>
                 <div data-aos="fade-up" className="accountCard">
-                    <p className="loginCardTitle">Login</p>
-                    <input id="phoneLoginInput" type="text" placeholder="Phone Number"/>
+                    <p className="loginCardTitle">Sign Up</p>
+                    <input id="phoneLoginInput" type="text" placeholder="Enter Phone Number"/>
                     <br />
-                    <input id="passwordLoginInput" type="text" placeholder="Password"/>
+                    <input id="passwordLoginInput" type="text" placeholder="Create Password"/>
                     <br />
-                    <p>Don't have an account with us? <br /> <Link style={{color: "blue", cursor: "pointer", textDecoration: "none"}} to="/SignUp">Sign up</Link> to get started.</p>
+                    <input id="passwordLoginInput" type="text" placeholder="Confirm Password"/>
                     <br />
-                    <p>Forgot password? <span style={{color: "blue", cursor: "pointer", paddingTop: "20px"}}>Click here.</span></p>
+                    <p>Already have an account? <Link to="/Login" style={{color: "blue", cursor: "pointer", paddingTop: "20px", textDecoration: "none"}}>Click here</Link></p>
                 </div>
             </div>
+            
         </div>
     )
 }
 
-export default Login
+export default SignUp;
