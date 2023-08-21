@@ -30,11 +30,13 @@ const HomePage = () => {
             
             <div data-aos="fade-in" className="navbarContainer">
                 <ul className="navbar">
-                    <li>Checking</li>
-                    <li>Savings</li>
-                    <li>Credit Cards</li>
-                    <li>Auto</li>
-                    <Link to="/LogIn" className="navLink">LogIn/SignUp</Link>
+                    <Link to="/Checking" className="navLink">Checking</Link>
+                    <Link to="/Savings" className="navLink">Savings</Link>
+                    <Link to="/CreditCards" className="navLink">Credit Cards</Link>
+                    <Link to="/Home" className="navLink">Home</Link>
+                    <Link to="/Auto" className="navLink">Auto</Link>
+                    <Link to="/LogIn" className="navLink">Login</Link>
+                    <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
             <div className="firstSection">
