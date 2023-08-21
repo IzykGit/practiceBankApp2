@@ -39,7 +39,6 @@ const Login = () => {
                         <input id="passwordLoginInput" type="text" placeholder="Password"/>
                             <br />
                     </form>
-
                     <p>Don't have an account with us? <br /> <Link style={{color: "blue", cursor: "pointer", textDecoration: "none"}} to="/SignUp">Sign up</Link> to get started.</p>
                     <br />
                     <p>Forgot password? <span style={{color: "blue", cursor: "pointer", paddingTop: "20px"}}>Click here.</span></p>

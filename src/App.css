@@ -252,29 +252,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Login/Signup Page */
 
 .accountCard {
@@ -303,6 +280,30 @@
     font-size: 15px;
 }
 
+
+
+/* Credit card page */
+
+.creditCardContainer {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.creditCards {
+    text-align: center;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    padding-top: 20px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+.creditCards > img {
+    width: 450px;
+}
 
 
 
