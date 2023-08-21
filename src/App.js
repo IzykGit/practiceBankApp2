@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
 
-    AOS.init({duration: 1200})
+    AOS.init({duration: 800})
     useEffect(() => {
         AOS.init();
     }, [    ])

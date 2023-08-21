@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *::-webkit-scrollbar {
     display: none;
@@ -62,7 +63,6 @@
     width: 400px;
     float: right;
     right: 20px;
-    top: 10px;
 }
 
 .extraOptionsNavbar {
@@ -144,6 +144,7 @@
     width: 70%;
     height: fit-content;
     border: 1px solid rgb(221, 221, 221);
+    border-radius: 20px;
 }
 
 .ratingContainer {
@@ -164,10 +165,112 @@
 
 /* Slogan and vectors section */
 
-.slogansAndVectors {
-    border: 1px solid black;
-    height: 1000px;
+.slogansAndVectorsMainContainer {
+    height: 2070px;
 }
+
+.first {
+    position: relative;
+    top: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first > img {
+    position: relative;
+}
+
+.first > p {
+    width: 850px;
+    position: relative;
+    top: 180px;
+    font-size: 40px;
+    color: #4F6D7A;
+}
+
+.second {
+    position: relative;
+    top: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second > img {
+    position: relative;
+}
+
+.second > p {
+    width: 850px;
+    position: relative;
+    top: 180px;
+    font-size: 40px;
+    color: #4F6D7A;
+}
+
+.third {
+    position: relative;
+    top: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.third > img {
+    position: relative;
+}
+
+.third > p {
+    width: 850px;
+    position: relative;
+    top: 180px;
+    font-size: 40px;
+    color: #4F6D7A;
+}
+
+
+
+/* Footer Section */
+
+.companyFooter {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(95, 101, 106);
+    padding: 50px;
+    font-size: 15px;
+}
+
+.companyFooter > div {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
