@@ -45,7 +45,7 @@ const HomePage = () => {
                     <p className="subIntroduction"><Link to="/SignUp" style={{color: "blue", cursor: "pointer", textDecoration: "none"}}>Sign Up</Link> today and enjoy $250 with 5% APY.</p>
                 </div>
                 <div data-aos="fade-left" className="cardOfferContainer">
-                    <p className="creditCardInfo"><span style={{color: "blue", cursor: "pointer"}}>See about getting</span> a card with <br /> 1.5% cash back and no annual fee.</p>
+                    <p className="creditCardInfo"><Link to="/CreditCards" style={{color: "blue", cursor: "pointer", textDecoration: 'none'}}>See about getting</Link> a card with <br /> 1.5% cash back and no annual fee.</p>
                     <img className="cardIcon" src={cardIcon} alt="credit card icon"/>
                 </div>
             </div>

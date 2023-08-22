@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 *::-webkit-scrollbar {
     display: none;
@@ -292,21 +292,45 @@
 
 .creditCards {
     text-align: center;
-    height: 300px;
+    width: 510px;
+    height: 470px;
     position: relative;
-    top: 80px;
-    padding-top: 20px;
+    top: 40px;
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
     box-shadow: 0 0 10px 5px #ccc;
 }
 
+
 .creditCards > img {
     width: 450px;
 }
 
+.creditCards > p {
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #636564;
+}
 
+.creditCards > button {
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #636564;
+    border-radius: 10px;
+    border: transparent;
+    transition: 0.2s;
+    background-color: #ffffff;
+    cursor: pointer;
+}
 
+.creditCards > button:hover {
+    font-size: 25px;
+    background-color: #000000;
+    color: white;
+}
 
 
 
