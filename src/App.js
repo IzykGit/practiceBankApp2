@@ -16,7 +16,7 @@ const App = () => {
     AOS.init({duration: 800})
     useEffect(() => {
         AOS.init();
-    }, [    ])
+    }, [])
 
     return <BrowserRouter>
         <Routes>

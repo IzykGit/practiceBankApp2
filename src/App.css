@@ -85,6 +85,8 @@
 }
 
 
+
+
 .firstSection {
     height: 490px;
     background-color: #EAEAEA;
@@ -228,7 +230,6 @@
 }
 
 
-
 /* Footer Section */
 
 .companyFooter {
@@ -282,6 +283,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /* Credit card page */
 
 .creditCardContainer {
@@ -313,7 +323,7 @@
     color: #636564;
 }
 
-.creditCards > button {
+.cardLink {
     margin-bottom: 20px;
     padding: 5px 20px 5px 20px;
     font-size: 20px;
@@ -324,9 +334,10 @@
     transition: 0.2s;
     background-color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.creditCards > button:hover {
+.cardLink:hover {
     font-size: 25px;
     background-color: #000000;
     color: white;
@@ -337,3 +348,63 @@
 
 
 
+
+
+/* Checking Page */ 
+
+.checkingHeaderContainer {
+    padding: 50px;
+}
+
+.checkingHeaderContainer > h1 {
+    padding: 10px;
+    font-size: 55px;
+}
+
+.checkingHeaderContainer > p {
+    padding: 10px;
+    font-size: 30px;
+    color: #636564;
+}
+
+.checkingSubTextContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 230px;
+}
+
+.checkingSubHeader {
+    padding: 10px;
+    font-size: 35px;
+}
+
+.checkingSubText {
+    padding: 0 20px 0 20px;
+}
+
+.subTextSecondaryContainer {
+    border: 1px solid white;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 1px #ccc;
+    background-color: #a3cef1;
+    width: fit-content;
+}
+
+.checkingButton {
+    padding: 15px;
+    position: relative;
+    margin: 50px;
+    font-size: 20px;
+    background-color: white;
+    border: hidden;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.3s;
+}
+
+.checkingButton:hover {
+    background-color: #22e363;
+    font-size: 23px;
+    
+}

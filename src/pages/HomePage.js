@@ -117,6 +117,14 @@ const HomePage = () => {
                     <p>(859)-252-0430</p>
                     <p>bankbank@gmail.com</p>
                 </div>
+                <div>
+                    <h2>About</h2>
+                    <p>Site created by Lance Hemphill.
+                        <br />
+                     This site is built for the purpose of creating a portfolio
+                     <br />
+                      project and is not a real bank site.</p>
+                </div>
             </div>
         </div>
     )
