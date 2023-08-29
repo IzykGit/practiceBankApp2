@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import cardIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/cardIcon.png';
+import celebrateSaving from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/celebrateSaving.jpg';
 import ratingVector from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/ratingVector.png';
 import oneOnOne from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/oneOnOne.jpg';
 import groupMeeting from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/groupMeeting.jpg';
@@ -40,6 +41,9 @@ const HomePage = () => {
                 </ul>
             </div>
             <div className="firstSection">
+                <div data-aos-delay={400} data-aos="fade-in">
+                    <img className="celebrateSavingImage" src={celebrateSaving} alt="Celebrate saving with best bank!"/>
+                </div>
                 <div data-aos="fade-right" className="introductionContainer">
                     <h1 className="introduction">Get started with <span style={{color: '#4F6D7A'}}>Best Bank</span> today.</h1>
                     <p className="subIntroduction"><Link to="/SignUp" style={{color: "blue", cursor: "pointer", textDecoration: "none"}}>Sign Up</Link> today and enjoy $250 with 5% APY.</p>

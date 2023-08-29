@@ -128,6 +128,13 @@
     padding: 10px 10px 0 10px;
 }
 
+.celebrateSavingImage {
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    left: 500px;
+}
+
 
 
 
@@ -408,3 +415,22 @@
     font-size: 23px;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Savings page */ 
+
