@@ -23,11 +23,11 @@ const SignUp = () => {
             <div data-aos="fade-in" className="navbarContainer">
                 <ul className="navbar">
                     <Link to="/" className="navLink">Main Page</Link>
-                    <li>Checking</li>
-                    <li>Savings</li>
-                    <li>Credit Cards</li>
-                    <li>Home</li>
-                    <li>Auto</li>
+                    <Link to="/Checking" className="navLink">Checking</Link>
+                    <Link to="/Savings" className="navLink">Savings</Link>
+                    <Link to="/CreditCards" className="navLink">Credit Cards</Link>
+                    <Link to="/Home" className="navLink">Home</Link>
+                    <Link to="/Auto" className="navLink">Auto</Link>
                 </ul>
             </div>
             <div className="firstSection" style={{display: 'flex', justifyContent: 'center'}}>
