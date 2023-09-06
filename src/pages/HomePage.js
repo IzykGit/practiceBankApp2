@@ -100,36 +100,6 @@ const HomePage = () => {
                     </SplideSlide>
                 </Splide>
             </section>
-            <div className="slogansAndVectorsMainContainer">
-                <div data-aos="fade-up" className="first">
-                    <p>Here at Best Bank we belive the one on one experience is important for successfully saving.</p>
-                    <img alt="One on one meeting" src={oneOnOne}/>
-                </div>
-                <div data-aos="fade-up" className="second">
-                    <img alt="We have experts to help you save!" src={groupMeeting}/>
-                    <p>There is a team of experts behind every decision to help you save.</p>
-                </div>
-                <div data-aos="fade-up" className="third">
-                    <p>Our customer support is there 24/7 for any questions you may have at any time.</p>
-                    <img alt="Great customer support!" src={customerSupport}/>
-                </div>
-            </div>
-            <div className="companyFooter">
-                <div>
-                    <h2>Main Contacts</h2>
-                    <p>Main Office: 1499 Russell Cave Rd, Lexington, KY 40511</p>
-                    <p>(859)-252-0430</p>
-                    <p>bankbank@gmail.com</p>
-                </div>
-                <div>
-                    <h2>About</h2>
-                    <p>Site created by Lance Hemphill.
-                        <br />
-                     This site is built for the purpose of creating a portfolio
-                     <br />
-                      project and is not a real bank site.</p>
-                </div>
-            </div>
         </div>
     )
 }

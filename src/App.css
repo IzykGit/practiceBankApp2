@@ -144,7 +144,9 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    padding: 45px;
+    padding: 0 45px 0 45px;
+    position: relative;
+    top: 30px;
 }
 
 .reviewSlider {
@@ -172,85 +174,6 @@
     padding-left: 10px;
 }
 
-/* Slogan and vectors section */
-
-.slogansAndVectorsMainContainer {
-    height: 2070px;
-}
-
-.first {
-    position: relative;
-    top: 200px;
-    height: 400px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.first > img {
-    position: relative;
-}
-
-.first > p {
-    width: 850px;
-    position: relative;
-    top: 180px;
-    font-size: 40px;
-    color: #4F6D7A;
-}
-
-.second {
-    position: relative;
-    top: 450px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.second > img {
-    position: relative;
-}
-
-.second > p {
-    width: 850px;
-    position: relative;
-    top: 180px;
-    font-size: 40px;
-    color: #4F6D7A;
-}
-
-.third {
-    position: relative;
-    top: 700px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.third > img {
-    position: relative;
-}
-
-.third > p {
-    width: 850px;
-    position: relative;
-    top: 180px;
-    font-size: 40px;
-    color: #4F6D7A;
-}
-
-
-/* Footer Section */
-
-.companyFooter {
-    border-top: 1px solid black;
-    display: flex;
-    justify-content: space-evenly;
-    color: rgb(95, 101, 106);
-    padding: 50px;
-    font-size: 15px;
-}
-
-.companyFooter > div {
-    text-align: center;
-}
 
 
 
@@ -505,7 +428,7 @@
 }
 
 .homeHeaderContainer > div > p {
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
@@ -525,4 +448,16 @@
     background-color: #30a9ff;
     color: white;
     font-size: 30px;
+}
+
+.homeOptions {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+}
+
+.homeOptions > div {
+    width: 500px;
+    text-align: center;
 }
