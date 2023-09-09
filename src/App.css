@@ -96,7 +96,7 @@
 .introductionContainer {
     position: relative;
     top: 150px;
-    left: 150px;
+    padding: 20px;
     width: fit-content;
 }
 
@@ -110,8 +110,10 @@
 
 .cardOfferContainer {
     position: relative;
-    right: 250px;
-    float: right;
+    height: 325px;
+    top: 80px;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
@@ -134,6 +136,25 @@
     top: 100px;
     left: 500px;
 }
+
+
+@media screen and (max-width: 800px) {
+    .firstSection {
+        height: 1000px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -174,339 +195,3 @@
     padding-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-/* Login/Signup Page */
-
-.accountCard {
-    width: 300px;
-    height: fit-content;
-    position: relative;
-    top: 70px;
-    text-align: center;
-    padding: 50px;
-    -moz-box-shadow: 0 0 3px #ccc;
-    -webkit-box-shadow: 0 0 3px #ccc;
-    box-shadow: 0 0 10px 5px #ccc;
-}
-
-.loginCardTitle {
-    font-size: 30px;
-}
-
-#phoneLoginInput {
-    margin: 20px 0 20px 0;
-    font-size: 15px;
-}
-
-#passwordLoginInput {
-    margin: 0 0 20px 0;
-    font-size: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Credit card page */
-
-.creditCardContainer {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.creditCards {
-    text-align: center;
-    width: 510px;
-    height: 470px;
-    position: relative;
-    top: 40px;
-    -moz-box-shadow: 0 0 3px #ccc;
-    -webkit-box-shadow: 0 0 3px #ccc;
-    box-shadow: 0 0 10px 5px #ccc;
-}
-
-
-.creditCards > img {
-    width: 450px;
-}
-
-.creditCards > p {
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 22px;
-    color: #636564;
-}
-
-.cardLink {
-    margin-bottom: 20px;
-    padding: 5px 20px 5px 20px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    color: #636564;
-    border-radius: 10px;
-    border: transparent;
-    transition: 0.2s;
-    background-color: #ffffff;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.cardLink:hover {
-    font-size: 25px;
-    background-color: #30a9ff;
-    color: white;
-}
-
-
-
-
-
-
-
-
-/* Checking Page */ 
-
-.checkingHeaderContainer {
-    padding: 50px;
-}
-
-.checkingHeaderContainer > h1 {
-    padding: 10px;
-    font-size: 55px;
-}
-
-.checkingHeaderContainer > p {
-    padding: 10px;
-    font-size: 30px;
-    color: #636564;
-}
-
-.checkingSubTextContainer {
-    display: flex;
-    justify-content: space-evenly;
-    height: 230px;
-}
-
-.checkingSubHeader {
-    padding: 10px;
-    font-size: 35px;
-}
-
-.checkingSubText {
-    padding: 0 20px 0 20px;
-}
-
-.subTextSecondaryContainer {
-    border: 1px solid white;
-    -moz-box-shadow: 0 0 3px #ccc;
-    -webkit-box-shadow: 0 0 3px #ccc;
-    box-shadow: 0 0 10px 1px #ccc;
-    background-color: #a3cef1;
-    width: fit-content;
-}
-
-.checkingButton {
-    padding: 15px;
-    position: relative;
-    margin: 50px;
-    font-size: 20px;
-    background-color: white;
-    border: hidden;
-    border-radius: 10px;
-    font-family: 'Oswald', sans-serif;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.checkingButton:hover {
-    background-color: #30a9ff;
-    color: white;
-    font-size: 23px;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Savings page */ 
-
-.savingsHeader {
-    font-size: 80px;
-    padding: 50px 0 0 0;
-}
-
-.whySaveContainer {
-    width: 600px;
-    
-}
-
-.whySave {
-    font-size: 30px;
-    padding: 30px 0 30px 0;
-}
-
-.piggyBank {
-    width: 400px;
-}
-
-
-.savingsInfo > p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    padding: 70px 0 70px 0;
-    border-bottom: 1px solid black;
-}
-
-.openSavings {
-    font-size: 40px;
-    margin: 0 50px 0 0;
-}
-
-.savingsAccountButton {
-    font-size: 25px;
-    padding: 5px 20px 5px 20px;
-    background-color: #A3D9FF;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.savingsAccountButton:hover {
-    background-color: #30a9ff;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Home Page Section */ 
-
-.homeHeaderContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-}
-
-.homeHeaderContainer > div > p {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.homeHeaderContainer > div > button {
-    font-size: 25px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #A3D9FF;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: 0.5s;
-    position: absolute;
-    cursor: pointer;
-}
-
-.homeHeaderContainer > div > button:hover {
-    background-color: #30a9ff;
-    color: white;
-    font-size: 30px;
-}
-
-.homeOptions {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 30px;
-    margin-bottom: 50px;
-}
-
-.homeOptions > div {
-    width: 400px;
-    text-align: center;
-    -moz-box-shadow: 0 0 3px #ccc;
-    -webkit-box-shadow: 0 0 3px #ccc;
-    box-shadow: 0 0 10px 5px #ccc;
-    padding: 30px;
-
-}
-
-.homeOptions > div > img {
-    width: 200px;
-}
-
-
-
-
-
-
-
-
-
-/* Auto section */ 
-
-.autoImage {
-    width: 500px;
-}
-
-
-.autoTitleContainer {
-    position: relative;
-    top: 130px;
-}
-
-.autoSubTitle {
-    font-size: 20px;
-}
-
-.autoTitle {
-    font-size: 80px;
-}
-
-.autoStepsContainer {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.middleStepContainer {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 0 100px 0 100px;
-}

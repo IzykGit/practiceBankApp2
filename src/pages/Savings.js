@@ -1,7 +1,7 @@
 import React from "react";
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import piggyBank from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/piggyBank.png';
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css';
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/Savings.css';
 import { Link } from "react-router-dom";
 
 const Savings = () => {
@@ -30,7 +30,7 @@ const Savings = () => {
                     <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
-            <div className="firstSection" style={{display: 'flex', justifyContent: 'center', height: 2050}}>
+            <div className="firstSectionSavings">
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     <div style={{textAlign: 'center'}}>
                         <p data-aos="fade-down" className="savingsHeader"><span style={{color: "#4F6D7A"}}>Best Bank</span> Savings</p>

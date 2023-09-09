@@ -1,0 +1,56 @@
+
+
+.firstSectionCredit {
+    background-color: #EAEAEA;
+    cursor: default;
+    height: 550px;
+}
+
+
+.creditCardContainer {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.creditCards {
+    text-align: center;
+    width: 510px;
+    height: 470px;
+    position: relative;
+    top: 40px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+
+.creditCards > img {
+    width: 450px;
+}
+
+.creditCards > p {
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #636564;
+}
+
+.cardLink {
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: #4F6D7A;
+    border-radius: 10px;
+    border: transparent;
+    transition: 0.2s;
+    background-color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cardLink:hover {
+    padding: 10px 60px 10px 60px;
+    color: blue;
+}

@@ -4,7 +4,7 @@ import carVector from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src
 import getQualified from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/getQualified.png';
 import getFinanced from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/getFinanced.png';
 import driveOff from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/driveOff.png';
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css';
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/Auto.css';
 import {Link} from 'react-router-dom';
 
 
@@ -34,7 +34,7 @@ const Auto = () => {
                     <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
-            <div style={{display: "flex", justifyContent: "space-evenly"}} className="firstSection">
+            <div className="firstSectionAuto">
                 <div data-aos="fade-right" className="autoImageContainer">
                     <img  className="autoImage" alt="Need to finance a car?" src={carVector}/>
                 </div>
@@ -47,18 +47,30 @@ const Auto = () => {
                 <p style={{fontSize: 35}}>How to get started with Best Bank</p>
             </div>
             <div className="autoStepsContainer">
-                <div>
+                <div data-aos="fade-up">
                     <img alt="Get qualified for your auto loan!" src={getQualified}/>
-                    <p>placeholder</p>
+                    <p style={{fontSize: 30, marginBottom: 20, textDecoration: "underline", color: "#4F6D7A"}}>Apply with ease</p>
+                    <p>Get started by giving us details such as the car you want along with dealer location to
+                        get a credit decision. If anything changes along the way you can always let us know.
+                    </p>
                 </div>
-                <div className="middleStepContainer">
+                <div data-aos="fade-up" className="middleStepContainer">
                     <img alt="Get financed for your auto loan!" src={getFinanced} />
-                    <p>Placeholder</p>
+                    <p style={{fontSize: 30, marginBottom: 20, textDecoration: "underline", color: "#4F6D7A"}}>Get financed</p>
+                    <p>Best Bank saves you time. If you're approved we will send your information and paperwork to you
+                        and your car dealer.
+                    </p>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <img alt="Drive off with your new car!" src={driveOff} />
-                    <p>Placeholder</p>
+                    <p style={{fontSize: 30, marginBottom: 20, textDecoration: "underline", color: "#4F6D7A"}}>Drive</p>
+                    <p>Once you arrive at your dealer, choose your car with confidence and Best Bank will help you handle any
+                         financial changes. With Best Bank you can drive off the lot happy with your choice.
+                    </p>
                 </div>
+            </div>
+            <div data-aos="fade-up" className="autoApplyButtonContainer">
+                <button>Apple Now</button>
             </div>
         </div>
     )

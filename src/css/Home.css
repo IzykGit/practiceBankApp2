@@ -1,0 +1,60 @@
+
+
+.firstSectionHome {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-color: #EAEAEA;
+}
+
+.homeHeaderContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.homeHeaderContainer > div > p {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.homeHeaderContainer > div > button {
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    color: #4F6D7A;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+    cursor: pointer;
+}
+
+.homeHeaderContainer > div > button:hover {
+    padding: 10px 60px 10px 60px;
+    color: blue;
+}
+
+.homeOptions {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
+}
+
+.homeOptions > div {
+    width: 400px;
+    text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+    padding: 30px;
+
+}
+
+.homeOptions > div > img {
+    width: 200px;
+}

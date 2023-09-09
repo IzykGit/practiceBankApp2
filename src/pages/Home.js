@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css';
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/Home.css';
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import homeForSale from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/homeForSale.png';
 import homeSold from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/homeSold.jpg';
@@ -33,7 +33,7 @@ const Home = () => {
                     <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', height: "400px"}} className="firstSection">
+            <div className="firstSectionHome">
                 <div className="homeHeaderContainer">
                     <div  data-aos="fade-right">
                         <p>Need help with purchasing a home? Best Bank has you covered!</p>

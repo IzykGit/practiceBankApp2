@@ -1,4 +1,5 @@
 import React from "react";
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/CreditCards.css';
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import standardCard from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/standardCard.png';
 import premiumCard from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/premiumCard.png';
@@ -33,7 +34,7 @@ const CreditCards = () => {
                     <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
-            <div style={{height: 550}} className="firstSection">
+            <div className="firstSectionCredit">
                 <div className="creditCardContainer">
                     <div data-aos="fade-up" className="creditCards">
                         <p style={{fontSize: '40px'}}>Standard</p>

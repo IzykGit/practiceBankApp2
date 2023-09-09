@@ -1,0 +1,35 @@
+
+
+.firstSectionInfo {
+    height: 490px;
+    background-color: #EAEAEA;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.accountCard {
+    width: 300px;
+    height: fit-content;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    padding: 50px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+.loginCardTitle {
+    font-size: 30px;
+}
+
+#phoneLoginInput {
+    margin: 20px 0 20px 0;
+    font-size: 15px;
+}
+
+#passwordLoginInput {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}

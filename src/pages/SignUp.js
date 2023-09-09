@@ -1,7 +1,6 @@
 import React from "react";
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css'
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/LoginSignup.css'
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
-import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/App.css'
 import {Link} from 'react-router-dom';
 
 
@@ -30,7 +29,7 @@ const SignUp = () => {
                     <Link to="/Auto" className="navLink">Auto</Link>
                 </ul>
             </div>
-            <div className="firstSection" style={{display: 'flex', justifyContent: 'center'}}>
+            <div className="firstSectionInfo">
                 <div data-aos="fade-up" className="accountCard">
                     <p className="loginCardTitle">Sign Up</p>
                     <input id="phoneLoginInput" type="text" placeholder="Enter Phone Number"/>

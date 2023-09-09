@@ -40,10 +40,7 @@ const HomePage = () => {
                     <Link to="/SignUp" className="navLink">Sign Up</Link>
                 </ul>
             </div>
-            <div className="firstSection">
-                <div data-aos-delay={400} data-aos="fade-in">
-                    <img className="celebrateSavingImage" src={celebrateSaving} alt="Celebrate saving with best bank!"/>
-                </div>
+            <div style={{display: "flex", justifyContent: "space-evenly"}} className="firstSection">
                 <div data-aos="fade-right" className="introductionContainer">
                     <h1 className="introduction">Get started with <span style={{color: '#4F6D7A'}}>Best Bank</span> today.</h1>
                     <p className="subIntroduction"><Link to="/SignUp" style={{color: "blue", cursor: "pointer", textDecoration: "none"}}>Sign Up</Link> today and enjoy $250 with 5% APY.</p>

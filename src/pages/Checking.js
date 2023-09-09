@@ -1,4 +1,5 @@
 import React from "react";
+import 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/css/Checking.css';
 import bankIcon from 'C:/Users/lance/Desktop/Developement/Coding/bank-app-2/src/assets/bankIcon.png';
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const Checking = () => {
                     <Link to="/LogIn" className="navLink">LogIn/SignUp</Link>
                 </ul>
             </div>
-            <div style={{textAlign: "center", height: 550}} className="firstSection">
+            <div className="firstSectionChecking">
                 <div data-aos="fade-down" className="checkingHeaderContainer">
                     <h1>Best Bank Total Checking</h1>
                     <p>Enjoy $250 when opening a checking account with Best Bank.</p>
