@@ -455,9 +455,58 @@
     justify-content: space-evenly;
     position: relative;
     top: 30px;
+    margin-bottom: 50px;
 }
 
 .homeOptions > div {
-    width: 500px;
+    width: 400px;
     text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px 5px #ccc;
+    padding: 30px;
+
+}
+
+.homeOptions > div > img {
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* Auto section */ 
+
+.autoImage {
+    width: 500px;
+}
+
+
+.autoTitleContainer {
+    position: relative;
+    top: 130px;
+}
+
+.autoSubTitle {
+    font-size: 20px;
+}
+
+.autoTitle {
+    font-size: 80px;
+}
+
+.autoStepsContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.middleStepContainer {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 100px 0 100px;
 }
