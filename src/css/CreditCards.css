@@ -132,3 +132,25 @@
     padding: 10px 60px 10px 60px;
     color: blue;
 }
+
+@media screen and (max-width: 1600px) {
+
+    .creditCards {
+        width: 350px;
+    }
+
+    .creditCards > img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        opacity: 100%;
+    }
+}

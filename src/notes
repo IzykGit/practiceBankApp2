@@ -1,1 +1,6 @@
 On mobile if screen is over a button have the button's assigned hover effect happen automatically.
+
+just spent an hour trying to figure out why my hambuger menu disappeared. actually want to scream.. if I name the class of 
+hambuger menu "hambuger", it completely deletes it.
+I have no idea why, i probably just accidentally deleted something.
+Now im forced to name everthing hamburg which is awful

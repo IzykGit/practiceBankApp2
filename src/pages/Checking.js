@@ -23,11 +23,7 @@ const Checking = () => {
             
         })
     }, [])
-    
-    useEffect(() => {
-        AOS.init();
-    }, [])
-    
+
     
 
 

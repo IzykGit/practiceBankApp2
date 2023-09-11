@@ -271,8 +271,9 @@
 
     .mobileMenu .navLink {
         width: 100%;
-        max-width: 150px;
+        max-width: 100px;
         position: relative;
+        font-size: 20px;
     }
 }
 

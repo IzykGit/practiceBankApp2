@@ -10,7 +10,7 @@
     background: none;
     outline: none;
     border: none;
-    z-index: 5;
+    z-index: 9;
     float: right;
     right: 40px;
     top: 10px;
@@ -139,7 +139,7 @@
     font-size: 30px;
     padding: 70px 0 70px 0; 
     position: relative;
-left: 50px;
+    left: 50px;
     }
 
 .savingsInfo > p {
@@ -253,9 +253,7 @@ position: relative;
     }
 
     
-    .piggyBank {
-        text-align: right;
-    }
+
 
     .openSavingsContainer {
         width: 100%;
