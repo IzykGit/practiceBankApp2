@@ -1,10 +1,89 @@
 
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 5;
+    float: right;
+    right: 40px;
+    top: 10px;
+    opacity: 0%;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(78, 78, 78);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+
+.mobileMenu {
+    position: fixed;
+    display: block;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #708994;
+    padding-top: 100px;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.mobileMenu .navLink {
+    display: block;
+    text-align: center;
+    background-color: #d1d5d6;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.mobileMenu .navLink:hover {
+    background-color: #EAEAEA;
+    max-width: 300px;
+}
+
+.mobileMenu.is-active {
+    left: 0%;
+}
+
+
 .firstSectionSavings {
     background-color: #EAEAEA;
     cursor: default;
     display: flex;
     justify-content: center;
     height: 2050px;
+    width: 100%;
 }
 
 
@@ -13,32 +92,76 @@
     padding: 50px 0 0 0;
 }
 
+.whySaveMainContainer {
+    width: 100%;
+    position: relative;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 50px;
+}
+
 .whySaveContainer {
-    width: 600px;
-    
+    width: 600px;    
 }
 
 .whySave {
+    width: 100%;
     font-size: 30px;
     padding: 30px 0 30px 0;
 }
 
 .piggyBank {
     width: 400px;
+    align-self: center;
 }
 
+
+
+
+.mainSavingsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.savingsInfoHeaderContainer {
+    margin: 200px 0px 40px 0px;
+    width: 90%;
+}
+
+.savingsInfoHeader {
+    font-size: 50px;
+    position: relative;
+    }
+
+.savingsInfoText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 70px 0 70px 0; 
+    position: relative;
+left: 50px;
+    }
 
 .savingsInfo > p {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     padding: 70px 0 70px 0;
     border-bottom: 1px solid black;
+    position: relative;
+}
+
+.openSavingsContainer {
+    display: flex;
+    margin-top: 120px;
+    width: fit-content;
 }
 
 .openSavings {
     font-size: 40px;
     margin: 0 50px 0 0;
-}
+position: relative;
+    left: 50px  ;
+    }
 
 .savingsAccountButton {
     font-size: 25px;
@@ -56,3 +179,174 @@
     color: blue;
 }
 
+
+@media screen and (max-width: 1250px) {
+    .firstSectionSavings {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .savingsHeader {
+        font-size: 50px;
+    }
+
+
+    .piggyBank {
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+    .savingsInfoHeader {
+        font-size: 30px;
+        width: fit-content;
+    }
+
+    .savingsInfo {
+        width: 70%;
+    }
+
+    .savingsInfo > p {
+        font-size: 25px;
+    }
+
+    .openSavingsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .openSavings {
+        font-size: 30px;
+        margin: 0px 10px 0px 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        opacity: 100%;
+    }
+
+    .firstSectionSavings {
+        height: 2200px;
+        }
+
+    .openSavings {
+        font-size: 20px;
+    }
+
+    .savingsAccountButton {
+        font-size: 15px;
+    }
+
+    .whySaveMainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    .piggyBank {
+        text-align: right;
+    }
+
+    .openSavingsContainer {
+        width: 100%;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+    
+    .openSavings {
+        width: auto;
+        left: 0;
+    }
+
+    .savingsAccountButton {
+        width: 100%;
+        max-width: 200px;
+        align-self: center;
+        left: 0;
+        margin: 10px 0 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .whySaveMainContainer {
+        width: 70%;
+    }
+
+    .whySaveMainContainer {
+        width: 100%;
+    }
+
+    .whySaveContainer {
+        width: 100%;
+    }
+
+    .piggyBank {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .firstSectionSavings {
+        height: 2400px;
+    }
+
+
+    .savingsInfoHeader {
+        left: 1%;
+        width: 99%;
+    }
+
+    .savingsInfoText {
+        left: 2%;
+    }
+
+    .openSavingsContainer {
+        width: 100%;
+    }
+
+    .openSavings {
+        font-size: 20px;
+    }
+
+    .savingsAccountButton {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .savingsAccountButton:hover {
+        width: 100%;
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .firstSectionSavings {
+        height: 2800px;
+    }
+
+    .piggyBank {
+        width: 200px;
+    }
+
+    .openSavings {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .firstSectionSavings {
+        height: 2800px;
+    }
+}

@@ -16,6 +16,7 @@ const App = () => {
     AOS.init({duration: 800})
     useEffect(() => {
         AOS.init();
+        AOS.refreshHard();
     }, [])
 
     return <BrowserRouter>
