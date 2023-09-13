@@ -1,4 +1,82 @@
 
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 5;
+    float: right;
+    right: 40px;
+    top: 10px;
+    opacity: 0%;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(78, 78, 78);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+
+.mobileMenu {
+    position: fixed;
+    display: block;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #708994;
+    padding-top: 100px;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.mobileMenu .navLink {
+    display: block;
+    text-align: center;
+    background-color: #d1d5d6;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.mobileMenu .navLink:hover {
+    background-color: #EAEAEA;
+    max-width: 300px;
+}
+
+.mobileMenu.is-active {
+    left: 0%;
+}
+
+
+
 
 .firstSectionHome {
     display: flex;
@@ -11,8 +89,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    padding: 50px;
 }
+
 
 .homeHeaderContainer > div > p {
     font-size: 45px;
@@ -48,13 +128,131 @@
 .homeOptions > div {
     width: 400px;
     text-align: center;
-    -moz-box-shadow: 0 0 3px #ccc;
-    -webkit-box-shadow: 0 0 3px #ccc;
-    box-shadow: 0 0 10px 5px #ccc;
     padding: 30px;
+}
 
+.middleHomeOption {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .homeOptions > div > img {
-    width: 200px;
+    width: 150px;
+}
+
+.homeOptionTag {
+    font-size: 30px;
+    color: #4F6D7A;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 30px;
+}
+
+.homeOptionSubTag {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1285px) {
+    .homeForSaleVector {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .firstSectionHome {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .firstSectionHome {
+        height: 650px;
+    }
+
+    .hamburger {
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .firstSectionHome {
+        height: 800px;
+    }
+
+    .homeHeaderContainer {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .homeForSaleVector {
+        margin-top: 50px;
+    }
+
+    .homeOptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .homeOptions > div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .homeOptions > div > img {
+        width: 150px;
+    }
+
+    .middleHomeOption {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: none;
+        border-right: none;
+        margin: 40px 0 40px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .creditCards {
+        width: 300px;
+    }
+
+    .mobileMenu .navLink {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .homeForSaleVector {
+        width: 250px;
+    }
+
+    .homeOptions > div {
+        align-items: center;
+    }
+
+    .homeOptionTag {
+        font-size: 20px;
+
+        position: relative;
+        right: 10px;
+    }
+
+    .homeOptionSubTag {
+        font-size: 20px;
+        padding: 25px;
+        margin: 0;
+        position: relative;
+        right: 10px;
+    }
+    
 }

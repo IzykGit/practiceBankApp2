@@ -1,4 +1,81 @@
 
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 5;
+    float: right;
+    right: 40px;
+    top: 10px;
+    opacity: 0%;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(78, 78, 78);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+
+.mobileMenu {
+    position: fixed;
+    display: block;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #708994;
+    padding-top: 100px;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.mobileMenu .navLink {
+    display: block;
+    text-align: center;
+    background-color: #d1d5d6;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.mobileMenu .navLink:hover {
+    background-color: #EAEAEA;
+    max-width: 300px;
+}
+
+.mobileMenu.is-active {
+    left: 0%;
+}
+
+
 
 .firstSectionInfo {
     height: 490px;
@@ -32,4 +109,17 @@
 #passwordLoginInput {
     margin: 0 0 20px 0;
     font-size: 15px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .accountCard {
+        width: 240px;
+    }
 }

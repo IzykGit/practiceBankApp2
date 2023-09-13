@@ -327,6 +327,17 @@ position: relative;
         width: 100%;
         max-width: 230px;
     }
+
+    .creditCards {
+        width: 300px;
+    }
+    
+    .mobileMenu .navLink {
+        font-size: 20px;
+        padding: 3px;
+    }
+    
+    
 }
 
 @media screen and (max-width: 430px) {

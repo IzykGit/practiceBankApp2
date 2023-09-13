@@ -264,6 +264,18 @@
 
 }
 
+@media screen and (max-width: 550px) {
+    .creditCards {
+        width: 300px;
+    }
+
+    .mobileMenu .navLink {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+}
+
 @media  screen and (max-width: 300px) {
     .firstSection {
         height: 1000px;

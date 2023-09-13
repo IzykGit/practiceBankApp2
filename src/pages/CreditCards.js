@@ -54,9 +54,9 @@ const CreditCards = () => {
                 </ul>
             </div>
             <div className="mobileMenu">
+                <Link to="/" className="navLink">Main Page</Link>
                 <Link to="/Checking" className="navLink">Checking</Link>
                 <Link to="/Savings" className="navLink">Savings</Link>
-                <Link to="/CreditCards" className="navLink">Credit Cards</Link>
                 <Link to="/Home" className="navLink">Home</Link>
                 <Link to="/Auto" className="navLink">Auto</Link>
                 <Link to="/LogIn" className="navLink">Login</Link>
